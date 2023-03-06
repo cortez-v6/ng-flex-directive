@@ -1,27 +1,39 @@
-# NgFlexDirective
+### Introduction
+Since the Angular team will no longer publish any new releases for the Angular [Flex Layout](https://github.com/angular/flex-layout) API, this project is built using the AngularJS framework (simply a literal directive to make all flex layout options available). Please see [this article](https://medium.com/@caerus.karu/farewell-flex-layout-aaa567023769) for the explanation regarding the official Flex Layout API.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+Please make sure you have created a new Angular project before utilizing the directive. If not, you can check out the official [Angular CLI](https://angular.io/cli) documentation to create a new project and start using this directive.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Getting Started
+First you'll need to import the Layout module in your app's module (or where you want the flex directive).
 
-## Code scaffolding
+**Note:** Simply copy the **flex-layout** folder to your protect's root or `src/app` directory.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**app.module.ts**
 
-## Build
+```ts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+import { FlexLayoutModule } from './flex-layout/flex-layout';
+...
 
-## Running unit tests
+@NgModule({
+    ...
+    imports: [ FlexLayoutModule ],
+    ...
+});
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+After that is configured, you can use the Angular Layout attributes in your HTML tags for flex layout:
+```html
+<div fxLayout="row" fxLayoutAlign="space-between">
+</div>
+```
 
-## Running end-to-end tests
+Check out [all of the available options](https://github.com/sangay-cortez/ng-flex-directive/wiki/API-Overview) for using Angular Layout in your application.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+### Demos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+*  [Explore Examples Online](https://tburleson-layouts-demos.firebaseapp.com/)
