@@ -1,5 +1,7 @@
 ### Introduction
-Since the Angular team will no longer publish any new releases for the Angular [Flex Layout](https://github.com/angular/flex-layout) API, this project is built using the AngularJS framework (simply a literal directive to make all flex layout options available). Please see [this article](https://medium.com/@caerus.karu/farewell-flex-layout-aaa567023769) for the explanation regarding the official Flex Layout API.
+Since the Angular team will no longer publish any new releases for the Angular [Flex Layout](https://github.com/angular/flex-layout) API, this project is built using the [AngularJS](https://angular.io/) framework, simply a literal directive to make all flex layout options available.
+
+Please see [this article](https://medium.com/@caerus.karu/farewell-flex-layout-aaa567023769) for the explanation regarding the official Flex Layout API.
 
 Please make sure you have created a new Angular project before utilizing the directive. If not, you can check out the official [Angular CLI](https://angular.io/cli) documentation to create a new project and start using this directive.
 
